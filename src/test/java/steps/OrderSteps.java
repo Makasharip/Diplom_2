@@ -54,8 +54,8 @@ public class OrderSteps {
     @Step("Compare user's email in order with token")
     public void compareEmailInOrder(Response response, String email){
         JsonPath jsonPathEvaluator = response.jsonPath();
-        String order_email = jsonPathEvaluator.get("order.owner.email");
-        assertEquals(email, order_email);
+        String orderEmail = jsonPathEvaluator.get("order.owner.email");
+        assertEquals(email, orderEmail);
     }
 
     @Step("Extract _id from response to POST /orders")
