@@ -69,8 +69,8 @@ public class OrderSteps {
     public void compareOrderId(Response response, String orderId){
         GetUsersOrdersDeserial order = response.body().as(GetUsersOrdersDeserial.class);
         List<OrdersDeserial> orders = order.getOrders();
-        String user_orderId = orders.get(orders.size() - 1).get_id();
-        assertEquals(orderId, user_orderId);
+        String userOrderId = orders.get(orders.size() - 1).get_id();
+        assertEquals(orderId, userOrderId);
     }
 
 }

@@ -17,5 +17,5 @@ public class DataDeserial {
     private int v;
     private String image;
     private String imageMobile;
-    private String imageLarge;
+    private String imageMarge;
 }

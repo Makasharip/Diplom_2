@@ -1,15 +1,12 @@
 package tests;
-
-import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import serial.UserRegisterSerial;
 import steps.OrderSteps;
 import steps.UserSteps;
 import urls.Urls;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.qameta.allure.junit4.*;
 
 import static org.apache.http.HttpStatus.*;
 
